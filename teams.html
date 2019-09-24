@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./teams.css" />
+    <title>Teams</title>
+  </head>
+  <body>
+    <div class="navbar"></div>
+    <div class="teams">
+      <div id="title">Article1</div>
+      <div id="opis">
+        <div id="t1" class="team6 tut6">
+          <div class="p1 bbg">
+            <div class="bg" style="background-image: url('./jeden.jpg');"></div>
+            <div class="txt">paragraph</div> 
+          </div>
+          <div class="p1 bbg">
+            <div class="bg" style="background-image: url('./dwa.jpg');"></div>
+            <div class="txt">paragraph</div>
+          </div>
+          <div class="p1 bbg">
+              <div class="bg" style="background-image: url('./trzy.jpg');"></div>
+              <div class="txt">paragraph</div>
+          </div>
+          <div class="p1 bbg">
+              <div class="bg" style="background-image: url('./cztery.jpg');"></div>
+              <div class="txt">paragraph</div>
+          </div>
+          <div class="p1 bbg">
+              <div class="bg" style="background-image: url('./piec.jpg');"></div>
+              <div class="txt">paragraph</div>
+          </div>
+          <div class="p1 bbg">
+              <div class="bg" style="background-image: url('./szesc.jpg');"></div>
+              <div class="txt">paragraph</div>
+          </div>
+        </div>
+      </div>
+      <div id="title">Article2</div>
+      <div id="opis">
+        <div id="t2" class="team6 tut6">
+            <div class="p1 bbg">
+                <div class="bg" style="background-image: url('./jeden.jpg');"></div>
+                <div class="txt">paragraph</div> 
+              </div>
+              <div class="p1 bbg">
+                <div class="bg" style="background-image: url('./dwa.jpg');"></div>
+                <div class="txt">paragraph</div>
+              </div>
+              <div class="p1 bbg">
+                  <div class="bg" style="background-image: url('./trzy.jpg');"></div>
+                  <div class="txt">paragraph</div>
+              </div>
+              <div class="p1 bbg">
+                  <div class="bg" style="background-image: url('./cztery.jpg');"></div>
+                  <div class="txt">paragraph</div>
+              </div>
+              <div class="p1 bbg">
+                  <div class="bg" style="background-image: url('./piec.jpg');"></div>
+                  <div class="txt">paragraph</div>
+              </div>
+              <div class="p1 bbg">
+                  <div class="bg" style="background-image: url('./szesc.jpg');"></div>
+                  <div class="txt">paragraph</div>
+              </div>
+        </div>
+      </div>
+      <div id="title">Article3</div>
+      <div id="opis">
+        <div id="t3" class="team6 tut6">
+            <div class="p1 bbg">
+                <div class="bg" style="background-image: url('./jeden.jpg');"></div>
+                <div class="txt">paragraph</div> 
+              </div>
+              <div class="p1 bbg">
+                <div class="bg" style="background-image: url('./dwa.jpg');"></div>
+                <div class="txt">paragraph</div>
+              </div>
+              <div class="p1 bbg">
+                  <div class="bg" style="background-image: url('./trzy.jpg');"></div>
+                  <div class="txt">paragraph</div>
+              </div>
+              <div class="p1 bbg">
+                  <div class="bg" style="background-image: url('./cztery.jpg');"></div>
+                  <div class="txt">paragraph</div>
+              </div>
+              <div class="p1 bbg">
+                  <div class="bg" style="background-image: url('./piec.jpg');"></div>
+                  <div class="txt">paragraph</div>
+              </div>
+              <div class="p1 bbg">
+                  <div class="bg" style="background-image: url('./szesc.jpg');"></div>
+                  <div class="txt">paragraph</div>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="foot">Kamil Fijak©</footer>
+    
+    <script>
+      $(document).ready(function(){
+        $(".teams #title").click(function() {
+          $(this)
+            .next("#opis")
+            .slideToggle("fast")
+            .siblings("#opis:visible")
+            .slideUp("slow");
+          $(this).toggleClass("aktywny");
+          $(this)
+            .siblings("#title")
+            .removeClass("aktywny");
+        });
+      });
+      $(document).ready(function() {
+        $("#opis").show();
+      });
+
+    </script>
+  </body>
+</html>
